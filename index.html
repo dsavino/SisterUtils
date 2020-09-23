@@ -136,6 +136,11 @@
 	</script>
 </head>
 <body>
-	<input type='file' accept='text/plain' onchange='convertCSV(event)'><br>
+	<label for="input-file-region">Seleziona il file delle regioni (formato LEVEL;ID;LABEL;PARENT) per generare il corrispondete file json</label>
+	<input id="input-file-region" name="inputFileRegion" type='file' accept='text/plain' onchange='convertCSV(event)'><br>
+	</br>
+	<button type="button">BUTTON</button>
+	<button type="reset">RESET</button>
+	<button type="submit">SUBMIT</button>
 </body>
 </html>
