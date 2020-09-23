@@ -15,7 +15,8 @@ function csvJSON(csv){
 		  return JSON.stringify(result); //JSON
 		};
 		
-		function buildRegions(lines){
+(function(){		
+	function buildRegions(lines){
 		  let result = [];
 		  var headers=lines[0].split(";");
 		  for(var i=1;i<lines.length;i++){
@@ -117,3 +118,4 @@ function csvJSON(csv){
 				download(jsonStr, "filtri-comuni.json", "application/json;charset=utf-8");
 			};
 		}
+})()
