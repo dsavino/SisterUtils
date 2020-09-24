@@ -19,7 +19,11 @@
     <meta charset="utf-8" />
     <title>SisterUtils</title>
     <script src="./jsonObjRegionComuneSPOD.js"></script>
-    <script type="text/javascript"></script>
+    <script type="text/javascript">
+	function sendEventGA(event){
+		gtag('event', 'click', {'event_category':'button', 'event_label':event.id});
+	}
+    </script>
 </head>
 <body>
 	<!-- Google Tag Manager (noscript) -->
